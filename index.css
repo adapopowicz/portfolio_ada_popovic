@@ -10,42 +10,58 @@ body {
 }
 
 body {
-  /* background-color: #EDEDED; */
-  overflow: hidden;
+  background-color: #EDEDED;
+  /* overflow: hidden; */
 }
 
 .module {
   position: absolute;
-  display: inline-block;
-  width:100%;
-  height: 100%;
-  background-image: url("images/graph.png");
+  display: block;
+  width:200%;
+  height: 200%;
+  background-image: url("images/circles1.svg");
   z-index: 0;
+  background-repeat:no-repeat;
 }
-
-/* .background img{
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  margin-left: 0;
-  margin-top: 0%;
-  z-index: -100;
-} */
 
 .name{
   position: absolute;
   display: inline-block;
   margin-left: 2%;
-  margin-top: 3%;
-  width:20%;
-  height: 20%;
+  margin-top: 2%;
+  width:5%;
+  height: 5%;
   font-size: 2.5em;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Josefin Sans';
+  font-weight: Regular;
   z-index: 10;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.info{
+  margin-left: 90%;
+  margin-top: 50%;
+}
+
+.contact{
+  margin-left: 2%;
+  margin-top: 50%;
+}
+
+.workv img:hover{
+  position: absolute;
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  z-index: 10;
+}
+.workh img:hover{
+  position: absolute;
+  display: inline-block;
+  width: 35%;
+  height: auto;
+  z-index: 10;
 }
 
 .bart img{
@@ -54,8 +70,8 @@ body {
   align-self: center;
   width: 7%;
   height: auto;
-  margin-left: 80%;
-  margin-top: 15%;
+  /* margin-left: 80%; */
+  /* margin-top: 15%; */
   z-index: 1;
   transition-property: width;
   transition-duration: 1s;
@@ -64,59 +80,46 @@ body {
 
 }
 
-.bart img:hover{
-  position: absolute;
-  display: inline-block;
-  width: 20%;
-  height: auto;
-  margin-left: 80%;
-  margin-top: 15%;
-  z-index: 1;
-  /* filter: drop-shadow(0 0 7rem blue); */
-
-}
-
-.garden img{
+.flyer img{
   position: absolute;
   display: inline-block;
   width: 5%;
   height: auto;
-  margin-left: 37%;
-  margin-top: 20%;
+  /* margin-left: 37%;
+  margin-top: 20%; */
   z-index: 1;
   transition-property: width;
   transition-duration: 1s;
   transform: translateX(-50%) translateY(-50%);
 }
 
-.garden img:hover{
+.liver img{
   position: absolute;
   display: inline-block;
-
-  width: 10%;
+  width: 5%;
   height: auto;
-  margin-left: 37%;
-  margin-top: 20%;
+  /* margin-left: 37%;
+  margin-top: 20%; */
   z-index: 1;
   transition-property: width;
   transition-duration: 1s;
-
-
+  transform: translateX(-50%) translateY(-50%);
 }
 
-/* .bart {
+.pizza img{
   position: absolute;
-  overflow-wrap: normal;
-  margin-left: 5px;
-  margin-top: 0px;
-  z-index: 4;
-  font-size: 3em;
-  font-family: Jubilat;
-  color: black;
-  z-index: 2;
-  overflow-y: auto;
-  line-height: 110%;
-} */
+  display: inline-block;
+  width: 5%;
+  height: auto;
+  /* margin-left: 37%;
+  margin-top: 20%; */
+  z-index: 1;
+  transition-property: width;
+  transition-duration: 1s;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
 
 @-webkit-keyframes color {
   0% {background-color: #ff2700;}
